@@ -36,12 +36,22 @@
       font-size: 1.1rem;
       margin-bottom: 30px;
     }
+    .contact h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5em;
+      color: #222;
+    }
     .contact p {
-      margin: 0.4em 0; /* Espaçamento menor entre linhas */
+      margin: 0.4em 0;
     }
     .contact a {
       color: #000000;
       text-decoration: none;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
+    .contact a:hover {
+      color: #25D366;
+      text-decoration: underline;
     }
     .contact i.fa-envelope {
       margin-right: 8px;
@@ -57,16 +67,35 @@
       color: #888;
       margin-bottom: 15px;
     }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+      p.slogan {
+        font-size: 1rem;
+      }
+      .contact {
+        font-size: 1rem;
+      }
+      .contact h2 {
+        font-size: 1.1rem;
+      }
+      footer {
+        font-size: 0.8rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Logo Rozin & Lamounier Ltda" class="logo" />
-    <h1>Rozin & Lamounier Ltda</h1>
     <p class="slogan">Engenharia Técnica e Soluções para o Setor Público</p>
   </header>
 
   <section class="contact">
+    <h2>Contato</h2>
     <p><i class="fas fa-envelope"></i><a href="mailto:contato@rozinlamounier.com.br">contato@rozinlamounier.com.br</a></p>
     <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/5543988383568" target="_blank" rel="noopener">(43) 98838-3568 (Engenharia)</a></p>
     <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/5543996034467" target="_blank" rel="noopener">(43) 99603-4467 (Comercial)</a></p>
@@ -74,7 +103,7 @@
 
   <footer>
     <p>© 2025 Rozin & Lamounier Ltda. Todos os direitos reservados.</p>
-    <p>CNPJ: 59.746.775/0001-53</p>
+    <p><strong>CNPJ:</strong> 59.746.775/0001-53</p>
   </footer>
 </body>
 </html>
